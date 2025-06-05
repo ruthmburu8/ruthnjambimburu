@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back" />
+    <title>Ecogrow Farm</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            
+            
+            
+            <div class="nav-container" id="navContainer">
+                <!-- Close button for mobile -->
+                <button class="mobile-close" id="mobileClose">&times;</button>
+                
+                <ul class="nav-left">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                </ul>
+                  <div class="logo">Ecogrow Farm</div>
+                <ul class="nav-right">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+          <div class="content">
+            <h1>Fresh Produce from Our Farm</h1>
+            <p>Locally grown, organic and delivered with care</p>
+            <button class="btn">Explore More</button>
+         
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+           <div class="about-text left">
+                <h2>About Ecogrow Farm</h2>
+                <p>Our Farm is dedicated to sustainable and organic farming practices.
+                We grow healthy organic produce with love,<br> care and respect for nature.
+                Our mission is to provide farm-fresh <br> food while protecting the environment</p>
+                <button class="btn">Learn More</button>
+            </div>
+            <div class="about-img right">    
+                <img src="img/pic2.png" class="about-img right" alt="decorative img right"/>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h2>Our Products</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="img/pic3.png" alt="Dairy Products">
+                <h3>Dairy Products</h3>
+                <p>Fresh milk,cheese ,butter and yoghurt from grass-fed cows</p>
+                <button onclick="orderProduct('Dairy Products')">Order</button>
+            </div>
+
+            <div class="product-card">
+                <img src="img/pic4.png" alt="vegetables">
+                <h3>Vegetables</h3>
+                <p>Organically grown vegetables packed with nutrients and flavor</p>
+                <button onclick="orderProducts('Vegetables')">Order</button>
+            </div>
+
+            <div class="product-card">
+                <img src="img/pic5.png" alt="Fruits">
+                <h3>Fruits</h3>
+                <p>Seasonal fruits hand-picked fresh from the farm</p>
+                <button onclick="orderProducts('Fruits')">Order</button>
+            </div>
+
+            <div class="product-card">
+                <img src="img/pic6.png" alt="Fresh Meat">
+                <h3>Fresh Meat</h3>
+                <p>Healthy raw meat direct from healthy bulls in our farm</p>
+                <button onclick="orderProduct('Fresh Meat')">Order</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Why choose Ecogrow?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <img src="img/pic7.png" alt="Healthy cattle">
+                <h3>Healthy Cattle</h3>
+                <p>We raise healthy, well-fed livestock with zero antibiotics</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="feature-card">
+                <img src="img/pic8.png" alt="Fresh Products">
+                <h3>Fresh Products</h3>
+                <p>Enjoy farm-fresh, organic produce picked daily</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="feature-card">
+                <img src="img/pic9.png" alt="Easy Payment">
+                <h3>Easy Payment</h3>
+                <p>Secure and hassle-free payment options for all customers</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="feature-card">
+                <img src="img/pic10.png" alt="Modern Truck">
+                <h3>Modern Truck</h3>
+                <p>Our delivery trucks keep your produce fresh and safe</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="feature-card">
+                <img src="img/pic11.png" alt="Free Delivery">
+                <h3>Free Delivery</h3>
+                <p>Get your orders delivered free of charge, right to your door</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            </div>
+        </div>
+    </section>
+        
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <div class="reviews-header">
+            <h2>What Our Customers Are Saying</h2>
+            <p>Real experiences from families enjoying Ecogrow's fresh produce and dairy.</p>
+            <div class="review-controls">
+              <button id="prev">&#8592</button>
+              <button id="next">&#8594</button>
+            </div>
+            </div>
+                    
+           
+            <div class="reviews-container">
+            <div class="review-card">
+                <p class="review-text">"Ecogrow delivers fresh veggies every week.Quality and services are top-notch!"</p>
+                <span>Sarah M.,39</span>
+            </div>
+
+           
+
+            <div class="review-card" >
+               <p class="review-text">"Easy payment and free delivery! What else do you need from a farm services?"</p>
+                <span>Ann W.,28</span>
+            </div>            
+            </div>
+    </section>
+            
+    <section class="partners" id="partners">
+       <h2>Our Partners</h2>
+       <div class="partners-logos">
+        <div class="partners-card">
+          <img src="img/selina-logopic13.png" alt="selina">
+
+          <img src="img/delmonte-logo pic 14.png" alt="delmonte">
+      
+          <img src="img/kakuzi-logo pic15.png" alt="kakuzi">
+      
+           <img src="img/brookside- Logo pic 16.png" alt="brookside">
+    
+          <img src="img/Ketepa-logo pic17.png" alt="Ketepa">
+    
+          <img src="img/egaads-logo pic18.png" alt="eaagads">
+    </div>
+ </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="faq-container">
+    <div class="faq-left">
+      <h2>Frequently Asked Questions</h2>
+      <p>Have questions about our farm, products, or services? We've answered some of the most common ones to help you understand us better.</p>
+      <img src="img/pic12.png" alt="Farm Illustration">
+    </div>
+    <div class="faq-right">
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer (this)">
+          <span class="faq-text">Where is Ecogrow Farm located?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          We are located in Nairobi, Kenya, and serve both local and regional customers.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer (this)" `>
+          <span class="faq-text">Are your products organic?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Yes! All our produce is grown organically without synthetic chemicals.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer (this)">
+          <span class="faq-text">Do you offer home delivery?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Absolutely. We provide free delivery within Nairobi and surrounding areas.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer (this)">
+          <span class="faq-text">Can I visit the farm?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Yes! We welcome farm visits by appointment. Please contact us to schedule your visit.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer (this)">
+          <span class="faq-text">How can I place an order?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          You can order via our website, phone call or by visiting our local retail parteners.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer (this)">
+          <span class="faq-text">Do you offer bulk supply for businesses?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Absolutely! We work with hotels, restaurants and supermarkets for bulk delivery.
+           Get in touch to discuss your needs.
+        </div>
+      </div>
+
+       <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer (this)">
+          <span class="faq-text">What payment methods do you accept?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          We accept M-pesa,credit/debit cards and bank transfers for all orders.
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+        
+<section class="contact" id="contact">
+   <h2>Contact Us</h2>
+      <div class="contact-container">
+         <div class="contact-info">
+    <h3>Visit Our Farm</h3>
+      <p>Ecogrow Farm<br>Nairobi, Kenya</p>
+      <p>Email: contact@ecogrowfarm.com</p>
+      <p>Phone: +254 792399385</p>
+     </div>
+          <form id="contact-form">
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+         <button type="submit">Send Message</button>
+        </form>
+   </div>
+
+</section>
+            
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-card">
+      <h3>Ecogrow Farm</h3>
+      <p>About</p>
+      <p>Products</p>
+      <p>Features</p>
+      <p>Reviews</p>
+      <p>Contacts</p>
+      <div class="social-icons">
+        <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="img/youtube.png" alt="Youtube"></a>
+        
+        
+      </div>
+      <p class="footer-bottom">&copy; 2025 Ecogrow Farm. All rights reserved.</p>
+    </div>
+
+    <div class="footer-card">
+      <h3>Get in Touch</h3>
+      <button class="btn" id="onclick">Reach Out</button>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js">
+</script>
+</body>
+</html>
